@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Alaram Clock</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-content">
+            <h1>SET ALARAM</h1>
+            <div class="time">
+                <p id="local-time"></p>
+                <div class="input-div">
+                    <input type="text" name="hour" id="hour" class="hour" placeholder="Enter a Hour">
+                    <input type="text" name="minutes" id="minutes" class="minutes" placeholder="Enter a Minutes">
+                    <input type="text" name="seconds" id="seconds" class="seconds" placeholder="Enter a Seconds">
+                </div>
+                <div class="btn">
+                    <audio src="alaram.mp3" id="alaram"></audio>
+                    <button type="submit" id="start">Start Alaram</button>
+                    <button type="submit" id="stop">Stop Alaram</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
